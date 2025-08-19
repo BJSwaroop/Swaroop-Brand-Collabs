@@ -317,7 +317,7 @@
 
         async function loadSiteData() {
             try {
-                const response = await fetch('./data/site.json');
+                const response = await fetch('./site.json');
                 siteData = await response.json();
                 initializeApp();
             } catch (error) {
