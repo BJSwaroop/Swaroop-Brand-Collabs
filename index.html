@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaroop | One-Page Influencer Media Kit</title>
+    <meta name="description" content="Reach South India's Most Trusted Student Audience. Admissions • Placements • Career tools—real outcomes, not vanity metrics.">
+    <meta name="keywords" content="influencer marketing, student audience, Andhra Pradesh, Telangana, YouTube, Instagram, placements, admissions">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Swaroop | One-Page Influencer Media Kit">
+    <meta property="og:description" content="Reach South India's Most Trusted Student Audience. Admissions • Placements • Career tools—real outcomes, not vanity metrics.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        .logo-ticker {
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.15s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .focus-ring:focus {
+            outline: 2px solid #D1D5DB;
+            outline-offset: 2px;
+        }
+
+        .brand-logo {
+            transition: all 0.2s ease;
+            filter: grayscale(100%) brightness(0.7);
+        }
+
+        .brand-logo:hover {
+            filter: grayscale(100%) brightness(1) drop-shadow(0 0 8px rgba(209, 213, 219, 0.3));
+        }
+
+        .cohort-tag {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.15s ease;
+        }
+
+        .cohort-tag.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .nav-link {
+            transition: color 0.15s ease;
+        }
+
+        .nav-link:hover {
+            color: #FFFFFF;
+        }
+
+        .btn-outline {
+            transition: all 0.15s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(209, 213, 219, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-400 min-h-screen">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-gray-300 text-xl font-semibold" data-editable="true">SWAROOP</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#channels" class="nav-link text-gray-300 hover:text-white focus-ring">Channels</a>
+                    <a href="#case-studies" class="nav-link text-gray-300 hover:text-white focus-ring">Case Studies</a>
+                    <a href="#why-collaborate" class="nav-link text-gray-300 hover:text-white focus-ring">Why Collaborate</a>
+                    <a href="#commercials" class="nav-link text-gray-300 hover:text-white focus-ring">Commercials</a>
+                    <a href="#linkedin" class="nav-link text-gray-300 hover:text-white focus-ring">LinkedIn</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white focus-ring">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus-ring">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
+                <a href="#channels" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Channels</a>
+                <a href="#case-studies" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Case Studies</a>
+                <a href="#why-collaborate" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Why Collaborate</a>
+                <a href="#commercials" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Commercials</a>
+                <a href="#linkedin" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">LinkedIn</a>
+                <a href="#contact" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20 lg:py-32">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-300 mb-6" data-editable="true">
+                Reach South India's Most Trusted Student Audience
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-12" data-editable="true">
+                Post Class 12th Targetting • Placements Targetting • Career Guide seeking Audience —
+                <br>
+                Real outcomes, No fancy metrics, Quality leads.
+            </p>
+            <!-- <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button id="cohort-15-18" class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring transition-all">
+                    Target 15–18
+                </button>
+                <button id="cohort-18-27" class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring transition-all">
+                    Target 18–27
+                </button>
+            </div> -->
+            <p class="text-sm text-gray-500">
+                Focus: Andhra & Telangana · Authentic conversions · Transparent metrics
+            </p>
+        </section>
+
+        <!-- Brands Worked With - Scrolling Ticker -->
+        <section id="brands" class="py-20">
+            <h2 class="text-3xl font-bold text-gray-300 text-center mb-12" data-editable="true">Brands Worked With</h2>
+            <div class="overflow-hidden">
+                <div class="flex logo-ticker">
+                    <div class="flex space-x-12 mr-12" id="logo-strip">
+                        <!-- Logos will be populated by JavaScript -->
+                    </div>
+                    <div class="flex space-x-12" id="logo-strip-duplicate">
+                        <!-- Duplicate for seamless scroll -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Channels Section -->
+        <section id="channels" class="py-20">
+            <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">Channels</h2>
+            <div class="space-y-12" id="channels-container">
+                <!-- Channel cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Case Studies -->
+        <section id="case-studies" class="py-20">
+            <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">Case Studies</h2>
+            <div class="space-y-8" id="case-studies-container">
+                <!-- Case studies will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Why Collaborate -->
+        <section id="why-collaborate" class="py-20">
+            <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">Why Collaborate with Swaroop?</h2>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="text-lg text-gray-400">• Trusted by millions of students in Andhra & Telangana.</div>
+                <div class="text-lg text-gray-400">• Segmented channels to precisely reach 15–18 or 18–27 audiences.</div>
+                <div class="text-lg text-gray-400">• Proven conversions across courses, admissions, apps & tools.</div>
+                <div class="text-lg text-gray-400">• High engagement & loyalty (YT returning viewers ~57%, IG ER ~99.5%).</div>
+                <div class="text-lg text-gray-400">• 26+ WhatsApp communities with 50,000+ students for direct lead funnels.</div>
+                <div class="text-lg text-gray-400">• Transparent reporting and professional campaign delivery.</div>
+            </div>
+        </section>
+
+        <!-- Commercials -->
+        <section id="commercials" class="py-20">
+            <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">Commercials / Packages</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- YouTube - Swaroop Talks -->
+                <div class="bg-gray-900/30 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-300 mb-4">YouTube — Swaroop Talks</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex justify-between"><span>Dedicated Video:</span><span>₹4,00,000</span></div>
+                        <div class="flex justify-between"><span>Dedicated Podcast Video:</span><span>₹3,00,000</span></div>
+                        <div class="flex justify-between"><span>Integrated Video:</span><span>₹1,80,000</span></div>
+                    </div>
+                </div>
+
+                <!-- YouTube - Study with Swaroop -->
+                <div class="bg-gray-900/30 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-300 mb-4">YouTube — Study with Swaroop</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex justify-between"><span>Dedicated Video:</span><span>₹60,000</span></div>
+                        <div class="flex justify-between"><span>Integrated Video:</span><span>₹30,000</span></div>
+                        <div class="flex justify-between"><span>Short Video:</span><span>₹20,000</span></div>
+                    </div>
+                </div>
+
+                <!-- Instagram - Code with Swaroop -->
+                <div class="bg-gray-900/30 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold text-gray-300 mb-4">Instagram — Code with Swaroop</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex justify-between"><span>Reel + Story + Link-in-bio automation:</span><span>₹1,60,000</span></div>
+                        <div class="flex justify-between"><span>Story + WhatsApp communities:</span><span>₹50,000</span></div>
+                    </div>
+                </div>
+
+                <div class="text-sm text-gray-500 mt-8">
+                    <p class="mb-2">Add-ons: WhatsApp Blast · Pinned Comment · LinkedIn Cross-post · UTM/Bitly Tracking</p>
+                    <p>These are maximum commercials; final pricing depends on brand/product/scope. Custom bundles available.</p>
+                </div>
+
+                <div id="cohort-recommendation" class="cohort-tag text-sm text-gray-400 bg-gray-900/50 p-4 rounded-lg mt-6">
+                    <!-- Cohort-specific recommendations will appear here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- LinkedIn -->
+        <section id="linkedin" class="py-20">
+            <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">LinkedIn (Professional Credibility)</h2>
+            <div class="text-center max-w-2xl mx-auto">
+                <p class="text-lg text-gray-400 mb-6">40K+ followers—recruiters, founders, managers.</p>
+                <p class="text-gray-400 mb-8">Use cases: B2B / hiring / leadership / thought-leadership.</p>
+                <button class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring">
+                    Add LinkedIn to your plan
+                </button>
+            </div>
+        </section>
+
+        <!-- WhatsApp Communities -->
+        <section id="whatsapp" class="py-20">
+            <div class="text-center">
+                <p class="text-lg text-gray-400" data-editable="true">
+                    26+ WhatsApp communities · 50,000+ students — direct access for high-quality leads.
+                </p>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-lg text-gray-400" data-editable="true">
+                    I'm Swaroop—a Computer Science graduate, educator-creator, and trusted voice for students and young professionals in Andhra & Telangana. I create authentic content around careers, placements, and admissions—delivering measurable results for brand partners with full transparency.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="py-20">
+            <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">Let's Work Together</h2>
+            <div class="max-w-2xl mx-auto">
+                <form id="contact-form" class="space-y-6 mb-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" name="name" placeholder="Name" required class="bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
+                        <input type="text" name="brand" placeholder="Brand" required class="bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
+                    </div>
+                    <input type="url" name="website" placeholder="Website" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
+                    <input type="text" name="objective" placeholder="Objective" required class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
+                    <select name="cohort" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
+                        <option value="">Select Cohort</option>
+                        <option value="15-18">15–18</option>
+                        <option value="18-27">18–27</option>
+                        <option value="both">Both</option>
+                    </select>
+                    <input type="text" name="platforms" placeholder="Platform(s)" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
+                    <input type="text" name="budget" placeholder="Budget Range" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
+                    <input type="text" name="timeline" placeholder="Timeline" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
+                    <textarea name="notes" placeholder="Notes" rows="4" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring"></textarea>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button type="submit" class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring flex-1">
+                            Submit
+                        </button>
+                        <button type="button" id="download-media-kit" class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring flex-1">
+                            Download Media Kit
+                        </button>
+                    </div>
+                </form>
+
+                <div class="text-center space-y-4">
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="mailto:workwithswaroop@gmail.com" class="text-gray-300 hover:text-white focus-ring">
+                            📧 workwithswaroop@gmail.com
+                        </a>
+                        <a href="https://wa.me/918917564117" target="_blank" class="text-gray-300 hover:text-white focus-ring">
+                            💬 +91 8917564117
+                        </a>
+                    </div>
+                </div>
+
+                <div id="form-success" class="hidden text-center text-green-400 mt-4">
+                    Thank you! Your message has been submitted successfully.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800 py-8 mt-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500">
+            <p>&copy; 2024 Swaroop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        // Load site data
+        let siteData = {};
+        let selectedCohort = null;
+
+        async function loadSiteData() {
+            try {
+                const response = await fetch('./data/site.json');
+                siteData = await response.json();
+                initializeApp();
+            } catch (error) {
+                console.error('Error loading site data:', error);
+                // Fallback data if JSON loading fails
+                siteData = {
+                    brands: ["Scaler", "Coding Ninjas", "NxtWave", "GeekforGeeks", "College Vidya", "Odin School", "Ditto Insurance", "360DigitMG", "CollegeDost", "LPU", "Rishihood University", "Spark Academy", "GetCollegeAdmissions"],
+                    channels: [],
+                    case_studies: []
+                };
+                initializeApp();
+            }
+        }
+
+        function initializeApp() {
+            renderBrandLogos();
+            renderChannels();
+            renderCaseStudies();
+            setupEventListeners();
+        }
+
+        function renderBrandLogos() {
+            const logoStrip = document.getElementById('logo-strip');
+            const logoStripDuplicate = document.getElementById('logo-strip-duplicate');
+            
+            const logosHTML = siteData.brands.map(brand => 
+                `<div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">${brand}</div>`
+            ).join('');
+            
+            logoStrip.innerHTML = logosHTML;
+            logoStripDuplicate.innerHTML = logosHTML;
+        }
+
+        function renderChannels() {
+            const container = document.getElementById('channels-container');
+            
+            const channelsHTML = siteData.channels.map(channel => {
+                let metricsHTML = '';
+                if (channel.metrics) {
+                    const m = channel.metrics;
+                    metricsHTML = `
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-400">
+                            ${m.subscribers ? `<div><span class="text-gray-500">Subscribers:</span> ${formatNumber(m.subscribers)}</div>` : ''}
+                            ${m.followers ? `<div><span class="text-gray-500">Followers:</span> ${formatNumber(m.followers)}</div>` : ''}
+                            ${m.views_28d ? `<div><span class="text-gray-500">Views (28d):</span> ${formatNumber(m.views_28d)}</div>` : ''}
+                            ${m.avg_view_duration ? `<div><span class="text-gray-500">Avg Duration:</span> ${m.avg_view_duration}</div>` : ''}
+                            ${m.returning_viewers_pct ? `<div><span class="text-gray-500">Returning:</span> ~${m.returning_viewers_pct}%</div>` : ''}
+                            ${m.engagement_rate_pct ? `<div><span class="text-gray-500">Engagement:</span> ~${m.engagement_rate_pct}%</div>` : ''}
+                            ${m.india_pct ? `<div><span class="text-gray-500">India:</span> ~${m.india_pct}%</div>` : ''}
+                            ${m.gender_split ? `<div><span class="text-gray-500">Gender:</span> ~${m.gender_split.male}% M / ${m.gender_split.female}% F</div>` : ''}
+                        </div>
+                    `;
+                }
+
+                const bestForTags = channel.best_for ? channel.best_for.map(tag => 
+                    `<span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">${tag}</span>`
+                ).join(' ') : '';
+
+                return `
+                    <div class="bg-gray-900/30 p-6 rounded-lg channel-card" data-best-for="${(channel.best_for || []).join(',')}">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-semibold text-gray-300">${channel.name}</h3>
+                            <div class="cohort-tag text-xs text-green-400 bg-green-900/30 px-2 py-1 rounded">
+                                Best for this cohort
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-4">${channel.summary}</p>
+                        ${metricsHTML}
+                        ${bestForTags ? `<div class="mt-4 flex flex-wrap gap-2">${bestForTags}</div>` : ''}
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            ${channel.media_kit_url ? `<button class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Media Kit (PDF)</button>` : ''}
+                            <button class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Add to Plan</button>
+                            <button class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Contact</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            container.innerHTML = channelsHTML;
+        }
+
+        function renderCaseStudies() {
+            const container = document.getElementById('case-studies-container');
+            
+            const studiesHTML = siteData.case_studies.map(study => `
+                <div class="bg-gray-900/30 p-6 rounded-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div>
+                            <span class="text-gray-500 text-sm">Brand:</span>
+                            <div class="text-gray-300 font-medium">${study.brand}</div>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Objective:</span>
+                            <div class="text-gray-300">${study.objective}</div>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Deliverables:</span>
+                            <div class="text-gray-300">${study.deliverables}</div>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 text-sm">Links:</span>
+                            <div class="space-y-1">
+                                ${study.links.map(link => `<a href="${link}" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>`).join('')}
+                                <button class="block text-gray-400 hover:text-gray-300 text-sm underline">Replicate this</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            container.innerHTML = studiesHTML;
+        }
+
+        function setupEventListeners() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Cohort selection
+            document.getElementById('cohort-15-18').addEventListener('click', () => selectCohort('15-18'));
+            document.getElementById('cohort-18-27').addEventListener('click', () => selectCohort('18-27'));
+
+            // Contact form
+            document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
+            
+            // Download media kit
+            document.getElementById('download-media-kit').addEventListener('click', downloadMediaKit);
+        }
+
+        function selectCohort(cohort) {
+            selectedCohort = cohort;
+            
+            // Update button states
+            document.querySelectorAll('[id^="cohort-"]').forEach(btn => {
+                btn.classList.remove('bg-gray-300', 'text-black');
+                btn.classList.add('text-gray-300');
+            });
+            
+            const selectedBtn = document.getElementById(`cohort-${cohort}`);
+            selectedBtn.classList.add('bg-gray-300', 'text-black');
+            selectedBtn.classList.remove('text-gray-300');
+
+            // Show/hide cohort tags on channels
+            document.querySelectorAll('.channel-card').forEach(card => {
+                const bestFor = card.dataset.bestFor.split(',');
+                const cohortTag = card.querySelector('.cohort-tag');
+                
+                if (bestFor.includes(cohort)) {
+                    cohortTag.classList.add('show');
+                } else {
+                    cohortTag.classList.remove('show');
+                }
+            });
+
+            // Show cohort recommendation
+            const recommendation = document.getElementById('cohort-recommendation');
+            if (cohort === '18-27') {
+                recommendation.innerHTML = 'Recommended: YouTube Integration (Swaroop Talks) + IG Reel (Code with Swaroop)';
+                recommendation.classList.add('show');
+            } else if (cohort === '15-18') {
+                recommendation.innerHTML = 'Recommended: YouTube Integration (Study with Swaroop) + IG Reel (Raw Talks) + WhatsApp Blast';
+                recommendation.classList.add('show');
+            }
+
+            // Track event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'cohort_toggle', {
+                    'cohort': cohort
+                });
+            }
+        }
+
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            try {
+                // Submit form using window.form if available
+                if (window.form) {
+                    await window.form.submit(data);
+                }
+                
+                // Show success message
+                document.getElementById('form-success').classList.remove('hidden');
+                e.target.reset();
+                
+                // Track event
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'contact_submit', {
+                        'brand': data.brand,
+                        'cohort': data.cohort
+                    });
+                }
+            } catch (error) {
+                console.error('Form submission error:', error);
+                alert('Thank you for your interest! We\'ll get back to you soon.');
+            }
+        }
+
+        function downloadMediaKit() {
+            // Track event
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'media_kit_download');
+            }
+            
+            // In a real implementation, this would download a PDF
+            alert('Media kit download would start here. Please contact us for the complete media kit.');
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(1) + 'M';
+            }
+            if (num >= 1000) {
+                return (num / 1000).toFixed(0) + 'K';
+            }
+            return num.toString();
+        }
+
+        // Initialize the app
+        loadSiteData();
+    </script>
+</body>
+</html>

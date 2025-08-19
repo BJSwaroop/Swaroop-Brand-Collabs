@@ -1,0 +1,109 @@
+{
+  "channels": [
+    {
+      "slug": "swaroop-talks-youtube",
+      "name": "Swaroop Talks (YouTube)",
+      "summary": "Placements, career tools, skill courses (18–27).",
+      "metrics": {
+        "subscribers": 375000,
+        "views_28d": 1100000,
+        "avg_view_duration": "5:44",
+        "returning_viewers_pct": 57,
+        "age_split": {"13-17": 10.5, "18-24": 61.9, "25-34": 13.8, "35-44": 8.5},
+        "india_pct": 97.9,
+        "gender_split": {"male": 63, "female": 37}
+      },
+      "best_for": ["18-27", "placements", "courses"],
+      "media_kit_url": "/media/swaroop-talks.pdf"
+    },
+    {
+      "slug": "code-with-swaroop-instagram",
+      "name": "Code with Swaroop (Instagram)",
+      "summary": "High-engagement reels for placements/courses (18–27).",
+      "metrics": {"followers": 250000, "engagement_rate_pct": 99.5},
+      "best_for": ["18-27", "reels", "bio-link"]
+    },
+    {
+      "slug": "study-with-swaroop-youtube",
+      "name": "Study with Swaroop (YouTube)",
+      "summary": "Admissions, test prep, college discovery (15–18).",
+      "metrics": {
+        "subscribers": 47000,
+        "views_28d": 76000,
+        "avg_view_duration": "3:06",
+        "returning_viewers_pct": 51.5,
+        "age_split": {"13-17": 20.2, "18-24": 36.3},
+        "india_pct": 99.4,
+        "gender_split": {"male": 64.4, "female": 35.6}
+      },
+      "best_for": ["15-18", "admissions", "exams"],
+      "media_kit_url": "/media/study-with-swaroop.pdf"
+    },
+    {
+      "slug": "raw-talks-instagram",
+      "name": "Raw Talks with Swaroop (Instagram)",
+      "summary": "Class 12 aspirants & admissions focus (15–18).",
+      "metrics": {"followers": 100000},
+      "best_for": ["15-18", "admissions", "reels"]
+    },
+    {
+      "slug": "linkedin",
+      "name": "LinkedIn (Professional Layer)",
+      "summary": "40K+ followers—recruiters, founders, managers.",
+      "metrics": {"followers": 40000},
+      "best_for": ["b2b", "professional", "leadership"]
+    }
+  ],
+  "packages": {
+    "swaroop_talks_youtube": {"dedicated": 400000, "podcast": 300000, "integrated": 180000},
+    "study_with_swaroop_youtube": {"dedicated": 60000, "integrated": 30000, "short": 20000},
+    "code_with_swaroop_instagram": {"reel_story_bio": 160000, "story_whatsapp": 50000}
+  },
+  "case_studies": [
+    {
+      "brand": "Scaler",
+      "objective": "Course Enrollments",
+      "deliverables": "YT Integration + IG Reel (+ pinned comment/links)",
+      "links": ["https://youtu.be/yZRXpCUtLBw", "https://youtu.be/SiVvGGgSk38"]
+    },
+    {
+      "brand": "NxtWave",
+      "objective": "Enrollments",
+      "deliverables": "YouTube campaign",
+      "links": ["https://youtu.be/_A77pY4hCWw"]
+    },
+    {
+      "brand": "GeekforGeeks",
+      "objective": "Signups",
+      "deliverables": "YouTube",
+      "links": ["https://youtu.be/Q1iKpiL9dPQ"]
+    },
+    {
+      "brand": "College Vidya",
+      "objective": "Admissions",
+      "deliverables": "YouTube",
+      "links": ["https://youtu.be/MVIKt2JqQmY"]
+    },
+    {
+      "brand": "Odin School",
+      "objective": "Enrollments",
+      "deliverables": "YouTube",
+      "links": ["https://youtu.be/ML0zNZXB_E0"]
+    },
+    {
+      "brand": "Ditto Insurance",
+      "objective": "Qualified Leads",
+      "deliverables": "YouTube",
+      "links": ["https://youtu.be/DYIVxBxUUmo"]
+    }
+  ],
+  "brands": ["Scaler", "Coding Ninjas", "NxtWave", "GeekforGeeks", "College Vidya", "Odin School", "Ditto Insurance", "360DigitMG", "CollegeDost", "LPU", "Rishihood University", "Spark Academy", "GetCollegeAdmissions"],
+  "contact": {
+    "email": "workwithswaroop@gmail.com",
+    "whatsapp": "+918917564117"
+  },
+  "whatsapp_communities": {
+    "count": 26,
+    "total_students": 50000
+  }
+}
