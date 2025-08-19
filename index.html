@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-vibrant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,6 +78,162 @@
         .btn-outline:hover {
             background-color: rgba(209, 213, 219, 0.1);
         }
+
+        /* ---------- THEME OVERRIDES ---------- */
+        :root {
+            --accent: #93C5FD;        /* light blue */
+            --accent-2: #C084FC;      /* purple */
+            --accent-3: #34D399;      /* emerald */
+            --surface: rgba(17, 24, 39, 0.6);
+            --surface-strong: rgba(17, 24, 39, 0.85);
+            --ring: rgba(147, 197, 253, 0.7);
+        }
+
+        /* Fancy background layer for vibrant theme */
+        .theme-vibrant body {
+            background: radial-gradient(1200px 600px at 10% 0%, rgba(147, 197, 253, 0.08), transparent 60%),
+                        radial-gradient(1200px 800px at 90% 10%, rgba(192, 132, 252, 0.12), transparent 60%),
+                        radial-gradient(800px 600px at 50% 90%, rgba(52, 211, 153, 0.10), transparent 60%),
+                        #0A0A0A;
+        }
+
+        /* Elevate cards */
+        .theme-vibrant .bg-gray-900\/30 {
+            background: linear-gradient(180deg, rgba(22, 24, 35, 0.75), rgba(16, 18, 27, 0.65));
+            border: 1px solid rgba(147, 197, 253, 0.14);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.02);
+            backdrop-filter: blur(6px);
+        }
+
+        /* Headings pop a bit more */
+        .theme-vibrant .text-gray-300 { color: #E9EEFF !important; }
+        .theme-vibrant .text-gray-400 { color: #C8D2E6 !important; }
+        .theme-vibrant .text-gray-500 { color: #9FB2D0 !important; }
+
+        /* Borders & nav underline */
+        .theme-vibrant .border-gray-800 { border-color: rgba(147, 197, 253, 0.18) !important; }
+        .theme-vibrant .nav-link:hover { color: #ffffff; text-shadow: 0 0 12px rgba(147, 197, 253, 0.35); }
+
+        /* Outline buttons get accent */
+        .theme-vibrant .btn-outline {
+            border-color: var(--accent) !important;
+            color: var(--accent) !important;
+            box-shadow: 0 0 0 0 rgba(147, 197, 253, 0.0);
+        }
+        .theme-vibrant .btn-outline:hover {
+            background: linear-gradient(180deg, rgba(147, 197, 253, 0.12), rgba(192, 132, 252, 0.10));
+            box-shadow: 0 8px 24px rgba(147, 197, 253, 0.15);
+        }
+        .theme-vibrant .focus-ring:focus {
+            outline-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--ring);
+        }
+
+        /* Cohort tags glow */
+        .theme-vibrant .cohort-tag {
+            background: linear-gradient(90deg, rgba(52, 211, 153, 0.15), rgba(147, 197, 253, 0.15));
+            color: #8CE9C9 !important;
+            border: 1px solid rgba(52, 211, 153, 0.35);
+            text-shadow: 0 0 8px rgba(52, 211, 153, 0.35);
+        }
+
+        /* Brand ticker gets color and less grayscale */
+        .theme-vibrant .brand-logo {
+            filter: none !important;
+            color: #C3D9FF;
+            opacity: 0.9;
+        }
+        .theme-vibrant .brand-logo:hover {
+            color: #FFFFFF;
+            text-shadow: 0 0 14px rgba(192, 132, 252, 0.35);
+        }
+
+        /* Sections spacing separators (subtle) */
+        .theme-vibrant section h2 {
+            position: relative;
+        }
+        .theme-vibrant section h2::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 80px;
+            margin: 12px auto 0;
+            background: linear-gradient(90deg, transparent, rgba(147, 197, 253, 0.6), transparent);
+        }
+
+        /* Hero headline gradient text */
+        .theme-vibrant #hero h1 {
+            background: linear-gradient(90deg, #E9EEFF 0%, #C4D3FF 40%, #EBD8FF 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent !important;
+        }
+
+        /* Fancy underline for links */
+        .theme-vibrant a {
+            text-decoration-color: rgba(147, 197, 253, 0.5);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
+
+        /* Theme toggle switch styles */
+        .theme-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid #4B5563;
+            border-radius: 9999px;
+            padding: 6px 12px;
+            font-size: 0.9rem;
+        }
+        .theme-vibrant .theme-toggle {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(147, 197, 253, 0.08);
+        }
+        .theme-toggle svg {
+            width: 18px; height: 18px;
+        }
+
+/* ---- Platform Color Themes for Channel Cards ---- */
+.platform-card { position: relative; overflow: hidden; }
+
+/* YouTube: red accent */
+.theme-vibrant .platform-youtube {
+  background: linear-gradient(180deg, rgba(255, 0, 0, 0.12), rgba(16, 18, 27, 0.65));
+  border: 1px solid rgba(255, 59, 59, 0.38);
+  box-shadow: 0 12px 32px rgba(255,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.03);
+}
+.theme-vibrant .platform-youtube::before {
+  content: "";
+  position: absolute; inset: -1px auto auto -1px; width: 120px; height: 120px;
+  background: radial-gradient(60px 60px at 40% 40%, rgba(255,0,0,0.30), transparent 60%);
+  pointer-events: none;
+}
+
+/* Instagram: classic gradient accent */
+.theme-vibrant .platform-instagram {
+  background: linear-gradient(180deg, rgba(221, 42, 123, 0.16), rgba(16, 18, 27, 0.65));
+  border: 1px solid rgba(221, 42, 123, 0.40);
+  box-shadow: 0 12px 32px rgba(221,42,123,0.12), inset 0 1px 0 rgba(255,255,255,0.03);
+}
+.theme-vibrant .platform-instagram::before {
+  content: "";
+  position: absolute; inset: -1px -1px auto auto; width: 140px; height: 140px;
+  background: conic-gradient(from 210deg, #F58529, #DD2A7B, #8134AF, #515BD4, #F58529);
+  filter: blur(28px); opacity: 0.18; border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Platform badges */
+.platform-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.70rem; line-height: 1; padding: 5px 9px; border-radius: 9999px;
+  border: 1px solid currentColor; opacity: 0.95;
+}
+.badge-youtube { color: #ff6b6b; background: rgba(255, 0, 0, 0.08); }
+.badge-instagram { color: #ff79c6; background: rgba(221, 42, 123, 0.10); }
+.platform-badge svg { width: 12px; height: 12px; }
     </style>
 </head>
 <body class="bg-black text-gray-400 min-h-screen">
@@ -91,9 +247,9 @@
                     <a href="#case-studies" class="nav-link text-gray-300 hover:text-white focus-ring">Case Studies</a>
                     <a href="#why-collaborate" class="nav-link text-gray-300 hover:text-white focus-ring">Why Collaborate</a>
                     <a href="#commercials" class="nav-link text-gray-300 hover:text-white focus-ring">Commercials</a>
-                    <a href="#linkedin" class="nav-link text-gray-300 hover:text-white focus-ring">LinkedIn</a>
                     <a href="#contact" class="nav-link text-gray-300 hover:text-white focus-ring">Contact</a>
                 </div>
+                <!-- Theme toggle removed -->
                 <div class="md:hidden">
                     <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus-ring">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -107,22 +263,22 @@
                 <a href="#case-studies" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Case Studies</a>
                 <a href="#why-collaborate" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Why Collaborate</a>
                 <a href="#commercials" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Commercials</a>
-                <a href="#linkedin" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">LinkedIn</a>
                 <a href="#contact" class="block nav-link text-gray-300 hover:text-white focus-ring py-2">Contact</a>
             </div>
         </div>
     </nav>
 
     <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="pointer-events-none fixed inset-0 -z-10 opacity-0 theme-vibrant:opacity-100" aria-hidden="true"></div>
         <!-- Hero Section -->
         <section id="hero" class="text-center py-20 lg:py-32">
             <h1 class="text-4xl md:text-6xl font-bold text-gray-300 mb-6" data-editable="true">
                 Reach South India's Most Trusted Student Audience
             </h1>
             <p class="text-xl md:text-2xl text-gray-400 mb-12" data-editable="true">
-                Post Class 12th Targetting • Placements Targetting • Career Guide seeking Audience —
+                Post-12th Students • Placement Aspirants • 16-27 Year Olds —
                 <br>
-                Real outcomes, No fancy metrics, Quality leads.
+                No fancy metrics, Just Quality leads.
             </p>
             <!-- <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <button id="cohort-15-18" class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring transition-all">
@@ -143,10 +299,34 @@
             <div class="overflow-hidden">
                 <div class="flex logo-ticker">
                     <div class="flex space-x-12 mr-12" id="logo-strip">
-                        <!-- Logos will be populated by JavaScript -->
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Scaler</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Coding Ninjas</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">NxtWave</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">GeekforGeeks</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">College Vidya</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Odin School</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Ditto Insurance</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">360DigitMG</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">CollegeDost</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">LPU</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Rishihood University</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Spark Academy</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">GetCollegeAdmissions</div>
                     </div>
                     <div class="flex space-x-12" id="logo-strip-duplicate">
-                        <!-- Duplicate for seamless scroll -->
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Scaler</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Coding Ninjas</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">NxtWave</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">GeekforGeeks</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">College Vidya</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Odin School</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Ditto Insurance</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">360DigitMG</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">CollegeDost</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">LPU</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Rishihood University</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">Spark Academy</div>
+                      <div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">GetCollegeAdmissions</div>
                     </div>
                 </div>
             </div>
@@ -155,8 +335,117 @@
         <!-- Channels Section -->
         <section id="channels" class="py-20">
             <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">Channels</h2>
+
+  <p style="text-align:center; font-size:14px; color:#6b7280; margin-top:-10px; margin-bottom:20px;">
+    *Data updated as of August 2025
+  </p>
             <div class="space-y-12" id="channels-container">
-                <!-- Channel cards will be populated by JavaScript -->
+  <div class="platform-card platform-youtube bg-gray-900/30 p-6 rounded-lg border channel-card" data-best-for="18-27,placements,courses">
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="text-xl font-semibold text-gray-300">Swaroop Talks (YouTube)</h3>
+      <span class="platform-badge badge-youtube" title="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.8 31.8 0 0 0 24 12a31.8 31.8 0 0 0-.5-5.8ZM9.7 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+        YouTube
+      </span>
+      <div class="cohort-tag text-xs text-green-400 bg-green-900/30 px-2 py-1 rounded">Best for this cohort</div>
+    </div>
+    <p class="text-gray-400 mb-4">Placements, career tools, skill courses (18–27).</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-400">
+      <div><span class="text-gray-500">Subscribers:</span> 375K</div>
+      <div><span class="text-gray-500">Views (28d):</span> 1.1M</div>
+      <div><span class="text-gray-500">Avg Duration:</span> 5:44</div>
+      <div><span class="text-gray-500">Returning:</span> ~57%</div>
+      <div><span class="text-gray-500">India:</span> ~97.9%</div>
+      <div><span class="text-gray-500">Gender:</span> ~63% M / 37% F</div>
+    </div>
+    <div class="mt-4 flex flex-wrap gap-2">
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">18–27</span>
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">placements</span>
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">courses</span>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-6">
+      <a href="https://drive.google.com/drive/folders/1pjmwWFN6r-GKo-uCvzotths3WA2ig5KW?usp=drive_link" target="_blank" class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Media Kit (PDF)</a>
+      <a href="#contact" class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Contact</a>
+    </div>
+  </div>
+
+  <div class="platform-card platform-instagram bg-gray-900/30 p-6 rounded-lg border channel-card" data-best-for="18-27,reels,bio-link">
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="text-xl font-semibold text-gray-300">Code with Swaroop (Instagram)</h3>
+      <span class="platform-badge badge-instagram" title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 9a3 3 0 1 1-.001 6.001A3 3 0 0 1 12 9z"/></svg>
+        Instagram
+      </span>
+      <div class="cohort-tag text-xs text-green-400 bg-green-900/30 px-2 py-1 rounded">Best for this cohort</div>
+    </div>
+    <p class="text-gray-400 mb-4">High-engagement reels for placements/courses (18–27).</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-400">
+      <div><span class="text-gray-500">Followers:</span> 250K</div>
+      <div><span class="text-gray-500">Engagement:</span> ~99.5%</div>
+    </div>
+    <div class="mt-4 flex flex-wrap gap-2">
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">18–27</span>
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">reels</span>
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">bio-link</span>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-6">
+      <a href="#contact" class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Contact</a>
+    </div>
+  </div>
+
+  <div class="platform-card platform-youtube bg-gray-900/30 p-6 rounded-lg border channel-card" data-best-for="15-18,admissions,exams">
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="text-xl font-semibold text-gray-300">Study with Swaroop (YouTube)</h3>
+      <span class="platform-badge badge-youtube" title="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.6 3.5 12 3.5 12 3.5s-7.6 0-9.4.6A3 3 0 0 0 .5 6.2 31.8 31.8 0 0 0 0 12a31.8 31.8 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.8.6 9.4.6 9.4.6s7.6 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.8 31.8 0 0 0 24 12a31.8 31.8 0 0 0-.5-5.8ZM9.7 15.5v-7l6.3 3.5-6.3 3.5Z"/></svg>
+        YouTube
+      </span>
+      <div class="cohort-tag text-xs text-green-400 bg-green-900/30 px-2 py-1 rounded">Best for this cohort</div>
+    </div>
+    <p class="text-gray-400 mb-4">Admissions, test prep, college discovery (15–18).</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-400">
+      <div><span class="text-gray-500">Subscribers:</span> 47K</div>
+      <div><span class="text-gray-500">Views (28d):</span> 76K</div>
+      <div><span class="text-gray-500">Avg Duration:</span> 3:06</div>
+      <div><span class="text-gray-500">Returning:</span> ~51.5%</div>
+      <div><span class="text-gray-500">India:</span> ~99.4%</div>
+      <div><span class="text-gray-500">Gender:</span> ~64.4% M / 35.6% F</div>
+    </div>
+    <div class="mt-4 flex flex-wrap gap-2">
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">15–18</span>
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">admissions</span>
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">exams</span>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-6">
+      <a href="https://drive.google.com/drive/folders/1hZggXF-BoaBV6xfpe8WstnSkUAhyMO2x" target="_blank" class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Media Kit (PDF)</a>
+      <a href="#contact" class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Contact</a>
+    </div>
+  </div>
+
+  <div class="platform-card platform-instagram bg-gray-900/30 p-6 rounded-lg border channel-card" data-best-for="15-18,admissions,reels">
+    <div class="flex justify-between items-start mb-4">
+      <h3 class="text-xl font-semibold text-gray-300">Raw Talks with Swaroop (Instagram)</h3>
+      <span class="platform-badge badge-instagram" title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm6-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 9a3 3 0 1 1-.001 6.001A3 3 0 0 1 12 9z"/></svg>
+        Instagram
+      </span>
+      <div class="cohort-tag text-xs text-green-400 bg-green-900/30 px-2 py-1 rounded">Best for this cohort</div>
+    </div>
+    <p class="text-gray-400 mb-4">Class 12 aspirants & admissions focus (15–18).</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-400">
+      <div><span class="text-gray-500">Followers:</span> 100K</div>
+    </div>
+    <div class="mt-4 flex flex-wrap gap-2">
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">15–18</span>
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">admissions</span>
+      <span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">reels</span>
+    </div>
+    <div class="flex flex-wrap gap-3 mt-6">
+      <a href="#contact" class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Contact</a>
+    </div>
+  </div>
+
+
             </div>
         </section>
 
@@ -164,7 +453,84 @@
         <section id="case-studies" class="py-20">
             <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">Case Studies</h2>
             <div class="space-y-8" id="case-studies-container">
-                <!-- Case studies will be populated by JavaScript -->
+  <div class="bg-gray-900/30 p-6 rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div><span class="text-gray-500 text-sm">Brand:</span><div class="text-gray-300 font-medium">Scaler</div></div>
+      <div><span class="text-gray-500 text-sm">Objective:</span><div class="text-gray-300">Course Enrollments</div></div>
+      <div><span class="text-gray-500 text-sm">Deliverables:</span><div class="text-gray-300">YT Integration + IG Reel (+ pinned comment/links)</div></div>
+      <div><span class="text-gray-500 text-sm">Links:</span>
+        <div class="space-y-1">
+          <a href="https://youtu.be/yZRXpCUtLBw" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>
+          <a href="https://youtu.be/SiVvGGgSk38" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-900/30 p-6 rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div><span class="text-gray-500 text-sm">Brand:</span><div class="text-gray-300 font-medium">NxtWave</div></div>
+      <div><span class="text-gray-500 text-sm">Objective:</span><div class="text-gray-300">Enrollments</div></div>
+      <div><span class="text-gray-500 text-sm">Deliverables:</span><div class="text-gray-300">YouTube campaign</div></div>
+      <div><span class="text-gray-500 text-sm">Links:</span>
+        <div class="space-y-1">
+          <a href="https://youtu.be/_A77pY4hCWw" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-900/30 p-6 rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div><span class="text-gray-500 text-sm">Brand:</span><div class="text-gray-300 font-medium">GeekforGeeks</div></div>
+      <div><span class="text-gray-500 text-sm">Objective:</span><div class="text-gray-300">Signups</div></div>
+      <div><span class="text-gray-500 text-sm">Deliverables:</span><div class="text-gray-300">YouTube</div></div>
+      <div><span class="text-gray-500 text-sm">Links:</span>
+        <div class="space-y-1">
+          <a href="https://youtu.be/Q1iKpiL9dPQ" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-900/30 p-6 rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div><span class="text-gray-500 text-sm">Brand:</span><div class="text-gray-300 font-medium">College Vidya</div></div>
+      <div><span class="text-gray-500 text-sm">Objective:</span><div class="text-gray-300">Admissions</div></div>
+      <div><span class="text-gray-500 text-sm">Deliverables:</span><div class="text-gray-300">YouTube</div></div>
+      <div><span class="text-gray-500 text-sm">Links:</span>
+        <div class="space-y-1">
+          <a href="https://youtu.be/MVIKt2JqQmY" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-900/30 p-6 rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div><span class="text-gray-500 text-sm">Brand:</span><div class="text-gray-300 font-medium">Odin School</div></div>
+      <div><span class="text-gray-500 text-sm">Objective:</span><div class="text-gray-300">Enrollments</div></div>
+      <div><span class="text-gray-500 text-sm">Deliverables:</span><div class="text-gray-300">YouTube</div></div>
+      <div><span class="text-gray-500 text-sm">Links:</span>
+        <div class="space-y-1">
+          <a href="https://youtu.be/ML0zNZXB_E0" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-gray-900/30 p-6 rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div><span class="text-gray-500 text-sm">Brand:</span><div class="text-gray-300 font-medium">Ditto Insurance</div></div>
+      <div><span class="text-gray-500 text-sm">Objective:</span><div class="text-gray-300">Qualified Leads</div></div>
+      <div><span class="text-gray-500 text-sm">Deliverables:</span><div class="text-gray-300">YouTube</div></div>
+      <div><span class="text-gray-500 text-sm">Links:</span>
+        <div class="space-y-1">
+          <a href="https://youtu.be/DYIVxBxUUmo" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>
+        </div>
+      </div>
+    </div>
+  </div>
             </div>
         </section>
 
@@ -215,8 +581,8 @@
                 </div>
 
                 <div class="text-sm text-gray-500 mt-8">
-                    <p class="mb-2">Add-ons: WhatsApp Blast · Pinned Comment · LinkedIn Cross-post · UTM/Bitly Tracking</p>
-                    <p>These are maximum commercials; final pricing depends on brand/product/scope. Custom bundles available.</p>
+                    <p class="mb-2">Add-ons: WhatsApp Blast · Pinned Comment · Comment Automation</p>
+                    <p>These are maximum commercials; final pricing depends on brand/product/scope. Custom bundles available. All amounts are exclusive of GST.</p>
                 </div>
 
                 <div id="cohort-recommendation" class="cohort-tag text-sm text-gray-400 bg-gray-900/50 p-4 rounded-lg mt-6">
@@ -224,68 +590,22 @@
                 </div>
             </div>
         </section>
+       
 
-        <!-- LinkedIn -->
-        <section id="linkedin" class="py-20">
-            <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">LinkedIn (Professional Credibility)</h2>
-            <div class="text-center max-w-2xl mx-auto">
-                <p class="text-lg text-gray-400 mb-6">40K+ followers—recruiters, founders, managers.</p>
-                <p class="text-gray-400 mb-8">Use cases: B2B / hiring / leadership / thought-leadership.</p>
-                <button class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring">
-                    Add LinkedIn to your plan
-                </button>
-            </div>
-        </section>
-
-        <!-- WhatsApp Communities -->
-        <section id="whatsapp" class="py-20">
-            <div class="text-center">
-                <p class="text-lg text-gray-400" data-editable="true">
-                    26+ WhatsApp communities · 50,000+ students — direct access for high-quality leads.
-                </p>
-            </div>
-        </section>
-
-        <!-- About -->
+        <!-- About
         <section id="about" class="py-20">
             <div class="max-w-3xl mx-auto text-center">
                 <p class="text-lg text-gray-400" data-editable="true">
                     I'm Swaroop—a Computer Science graduate, educator-creator, and trusted voice for students and young professionals in Andhra & Telangana. I create authentic content around careers, placements, and admissions—delivering measurable results for brand partners with full transparency.
                 </p>
             </div>
-        </section>
+        </section> -->
 
         <!-- Contact -->
         <section id="contact" class="py-20">
-            <h2 class="text-3xl font-bold text-gray-300 text-center mb-16" data-editable="true">Let's Work Together</h2>
+            <h2 class="text-3xl font-bold text-gray-300 text-center mb-4" data-editable="true">Let's Work Together</h2>
+            
             <div class="max-w-2xl mx-auto">
-                <form id="contact-form" class="space-y-6 mb-12">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <input type="text" name="name" placeholder="Name" required class="bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
-                        <input type="text" name="brand" placeholder="Brand" required class="bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
-                    </div>
-                    <input type="url" name="website" placeholder="Website" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
-                    <input type="text" name="objective" placeholder="Objective" required class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
-                    <select name="cohort" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
-                        <option value="">Select Cohort</option>
-                        <option value="15-18">15–18</option>
-                        <option value="18-27">18–27</option>
-                        <option value="both">Both</option>
-                    </select>
-                    <input type="text" name="platforms" placeholder="Platform(s)" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
-                    <input type="text" name="budget" placeholder="Budget Range" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
-                    <input type="text" name="timeline" placeholder="Timeline" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring">
-                    <textarea name="notes" placeholder="Notes" rows="4" class="w-full bg-gray-900/30 border border-gray-700 text-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-gray-500 focus-ring"></textarea>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button type="submit" class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring flex-1">
-                            Submit
-                        </button>
-                        <button type="button" id="download-media-kit" class="btn-outline border border-gray-300 text-gray-300 px-8 py-3 rounded-full hover:bg-gray-300/10 focus-ring flex-1">
-                            Download Media Kit
-                        </button>
-                    </div>
-                </form>
-
                 <div class="text-center space-y-4">
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="mailto:workwithswaroop@gmail.com" class="text-gray-300 hover:text-white focus-ring">
@@ -296,139 +616,34 @@
                         </a>
                     </div>
                 </div>
-
-                <div id="form-success" class="hidden text-center text-green-400 mt-4">
-                    Thank you! Your message has been submitted successfully.
+                <br>
+                <br>
+                <div class="max-w-3xl mx-auto text-center">
+                    <p class="text-lg text-gray-400" data-editable="true">
+                        I'm Swaroop—a Computer Science graduate, educator-creator, and trusted voice for students and young professionals in Andhra & Telangana. I create authentic content around careers, placements, and admissions—delivering measurable results for brand partners with full transparency.
+                    </p>
                 </div>
+               
             </div>
         </section>
     </main>
 
     <footer class="border-t border-gray-800 py-8 mt-20">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500">
-            <p>&copy; 2024 Swaroop. All rights reserved.</p>
+            <p>&copy; 2025 Swaroop. All rights reserved.</p>
         </div>
     </footer>
 
     <script type="module">
-        // Load site data
-        let siteData = {};
         let selectedCohort = null;
 
-        async function loadSiteData() {
-            try {
-                const response = await fetch('./site.json');
-                siteData = await response.json();
-                initializeApp();
-            } catch (error) {
-                console.error('Error loading site data:', error);
-                // Fallback data if JSON loading fails
-                siteData = {
-                    brands: ["Scaler", "Coding Ninjas", "NxtWave", "GeekforGeeks", "College Vidya", "Odin School", "Ditto Insurance", "360DigitMG", "CollegeDost", "LPU", "Rishihood University", "Spark Academy", "GetCollegeAdmissions"],
-                    channels: [],
-                    case_studies: []
-                };
-                initializeApp();
-            }
+        if (location.protocol === 'file:') {
+            const warn = document.getElementById('file-protocol-warning');
+            if (warn) warn.classList.remove('hidden');
         }
 
         function initializeApp() {
-            renderBrandLogos();
-            renderChannels();
-            renderCaseStudies();
             setupEventListeners();
-        }
-
-        function renderBrandLogos() {
-            const logoStrip = document.getElementById('logo-strip');
-            const logoStripDuplicate = document.getElementById('logo-strip-duplicate');
-            
-            const logosHTML = siteData.brands.map(brand => 
-                `<div class="brand-logo text-gray-400 text-lg font-medium px-4 py-2 whitespace-nowrap">${brand}</div>`
-            ).join('');
-            
-            logoStrip.innerHTML = logosHTML;
-            logoStripDuplicate.innerHTML = logosHTML;
-        }
-
-        function renderChannels() {
-            const container = document.getElementById('channels-container');
-            
-            const channelsHTML = siteData.channels.map(channel => {
-                let metricsHTML = '';
-                if (channel.metrics) {
-                    const m = channel.metrics;
-                    metricsHTML = `
-                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-400">
-                            ${m.subscribers ? `<div><span class="text-gray-500">Subscribers:</span> ${formatNumber(m.subscribers)}</div>` : ''}
-                            ${m.followers ? `<div><span class="text-gray-500">Followers:</span> ${formatNumber(m.followers)}</div>` : ''}
-                            ${m.views_28d ? `<div><span class="text-gray-500">Views (28d):</span> ${formatNumber(m.views_28d)}</div>` : ''}
-                            ${m.avg_view_duration ? `<div><span class="text-gray-500">Avg Duration:</span> ${m.avg_view_duration}</div>` : ''}
-                            ${m.returning_viewers_pct ? `<div><span class="text-gray-500">Returning:</span> ~${m.returning_viewers_pct}%</div>` : ''}
-                            ${m.engagement_rate_pct ? `<div><span class="text-gray-500">Engagement:</span> ~${m.engagement_rate_pct}%</div>` : ''}
-                            ${m.india_pct ? `<div><span class="text-gray-500">India:</span> ~${m.india_pct}%</div>` : ''}
-                            ${m.gender_split ? `<div><span class="text-gray-500">Gender:</span> ~${m.gender_split.male}% M / ${m.gender_split.female}% F</div>` : ''}
-                        </div>
-                    `;
-                }
-
-                const bestForTags = channel.best_for ? channel.best_for.map(tag => 
-                    `<span class="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs">${tag}</span>`
-                ).join(' ') : '';
-
-                return `
-                    <div class="bg-gray-900/30 p-6 rounded-lg channel-card" data-best-for="${(channel.best_for || []).join(',')}">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-xl font-semibold text-gray-300">${channel.name}</h3>
-                            <div class="cohort-tag text-xs text-green-400 bg-green-900/30 px-2 py-1 rounded">
-                                Best for this cohort
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-4">${channel.summary}</p>
-                        ${metricsHTML}
-                        ${bestForTags ? `<div class="mt-4 flex flex-wrap gap-2">${bestForTags}</div>` : ''}
-                        <div class="flex flex-wrap gap-3 mt-6">
-                            ${channel.media_kit_url ? `<button class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Media Kit (PDF)</button>` : ''}
-                            <button class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Add to Plan</button>
-                            <button class="text-sm border border-gray-600 text-gray-300 px-4 py-2 rounded-full hover:bg-gray-600/20 focus-ring">Contact</button>
-                        </div>
-                    </div>
-                `;
-            }).join('');
-            
-            container.innerHTML = channelsHTML;
-        }
-
-        function renderCaseStudies() {
-            const container = document.getElementById('case-studies-container');
-            
-            const studiesHTML = siteData.case_studies.map(study => `
-                <div class="bg-gray-900/30 p-6 rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                        <div>
-                            <span class="text-gray-500 text-sm">Brand:</span>
-                            <div class="text-gray-300 font-medium">${study.brand}</div>
-                        </div>
-                        <div>
-                            <span class="text-gray-500 text-sm">Objective:</span>
-                            <div class="text-gray-300">${study.objective}</div>
-                        </div>
-                        <div>
-                            <span class="text-gray-500 text-sm">Deliverables:</span>
-                            <div class="text-gray-300">${study.deliverables}</div>
-                        </div>
-                        <div>
-                            <span class="text-gray-500 text-sm">Links:</span>
-                            <div class="space-y-1">
-                                ${study.links.map(link => `<a href="${link}" target="_blank" class="block text-blue-400 hover:text-blue-300 text-sm underline">View Campaign</a>`).join('')}
-                                <button class="block text-gray-400 hover:text-gray-300 text-sm underline">Replicate this</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `).join('');
-            
-            container.innerHTML = studiesHTML;
         }
 
         function setupEventListeners() {
@@ -441,8 +656,11 @@
             });
 
             // Cohort selection
-            document.getElementById('cohort-15-18').addEventListener('click', () => selectCohort('15-18'));
-            document.getElementById('cohort-18-27').addEventListener('click', () => selectCohort('18-27'));
+            const btn1518 = document.getElementById('cohort-15-18');
+            if (btn1518) btn1518.addEventListener('click', () => selectCohort('15-18'));
+
+            const btn1827 = document.getElementById('cohort-18-27');
+            if (btn1827) btn1827.addEventListener('click', () => selectCohort('18-27'));
 
             // Contact form
             document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
@@ -461,8 +679,10 @@
             });
             
             const selectedBtn = document.getElementById(`cohort-${cohort}`);
-            selectedBtn.classList.add('bg-gray-300', 'text-black');
-            selectedBtn.classList.remove('text-gray-300');
+            if (selectedBtn) {
+                selectedBtn.classList.add('bg-gray-300', 'text-black');
+                selectedBtn.classList.remove('text-gray-300');
+            }
 
             // Show/hide cohort tags on channels
             document.querySelectorAll('.channel-card').forEach(card => {
@@ -494,57 +714,7 @@
             }
         }
 
-        async function handleFormSubmit(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(e.target);
-            const data = Object.fromEntries(formData.entries());
-            
-            try {
-                // Submit form using window.form if available
-                if (window.form) {
-                    await window.form.submit(data);
-                }
-                
-                // Show success message
-                document.getElementById('form-success').classList.remove('hidden');
-                e.target.reset();
-                
-                // Track event
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'contact_submit', {
-                        'brand': data.brand,
-                        'cohort': data.cohort
-                    });
-                }
-            } catch (error) {
-                console.error('Form submission error:', error);
-                alert('Thank you for your interest! We\'ll get back to you soon.');
-            }
-        }
-
-        function downloadMediaKit() {
-            // Track event
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'media_kit_download');
-            }
-            
-            // In a real implementation, this would download a PDF
-            alert('Media kit download would start here. Please contact us for the complete media kit.');
-        }
-
-        function formatNumber(num) {
-            if (num >= 1000000) {
-                return (num / 1000000).toFixed(1) + 'M';
-            }
-            if (num >= 1000) {
-                return (num / 1000).toFixed(0) + 'K';
-            }
-            return num.toString();
-        }
-
-        // Initialize the app
-        loadSiteData();
+        initializeApp();
     </script>
 </body>
 </html>
